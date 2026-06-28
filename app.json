@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Assignment",
-    "slug": "Assignment",
+    "slug": "assignment",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -19,7 +19,14 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.siddhant_yadav.assignment"
     },
     "web": {
       "output": "static",
@@ -38,11 +45,21 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "expo-sqlite",
+      "expo-location",
+      "expo-camera"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "0decb73c-f0b2-4d7d-81f2-3dc36e733456"
+      }
+    },
+    "owner": "siddhant_yadav"
   }
 }
