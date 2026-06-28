@@ -17,7 +17,6 @@ export async function uploadCheckIn(checkIn) {
         formData.append("notes", checkIn.notes ?? "");
 
         formData.append("checkedInAt", checkIn.createdAt);
-        console.log("Base URL:", api.defaults.baseURL);
 
         const response = await api.post(
             "/checkins",
